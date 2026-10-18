@@ -2,10 +2,32 @@
   "name": "@pismile/authjs",
   "version": "0.1.0",
   "description": "Fournisseur « Se connecter avec pismile » (alias PI-SPI, BCEAO) pour Auth.js : Next.js, SvelteKit, Express…",
-  "keywords": ["pismile", "auth.js", "next-auth", "oidc", "openid-connect", "pi-spi", "bceao", "uemoa"],
+  "keywords": [
+    "pismile",
+    "auth.js",
+    "authjs",
+    "next-auth",
+    "nextjs",
+    "sveltekit",
+    "oidc",
+    "openid-connect",
+    "oauth2",
+    "authentication",
+    "pi-spi",
+    "bceao",
+    "uemoa"
+  ],
   "homepage": "https://pismile.com/docs/sdk/authjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getpismile/pismile-authjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/getpismile/pismile-authjs/issues",
+    "email": "support@pismile.com"
+  },
   "license": "MIT",
-  "author": "pismile <support@pismile.com>",
+  "author": "pismile <support@pismile.com> (https://pismile.com)",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -19,6 +41,9 @@
   "sideEffects": false,
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
