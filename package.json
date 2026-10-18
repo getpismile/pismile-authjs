@@ -1,6 +1,6 @@
 {
   "name": "@pismile/authjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fournisseur « Se connecter avec pismile » (alias PI-SPI, BCEAO) pour Auth.js : Next.js, SvelteKit, Express…",
   "keywords": [
     "pismile",
@@ -37,7 +37,11 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "sideEffects": false,
   "engines": {
     "node": ">=18"
