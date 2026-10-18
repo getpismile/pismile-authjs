@@ -1,0 +1,42 @@
+{
+  "name": "@pismile/authjs",
+  "version": "0.1.0",
+  "description": "Fournisseur « Se connecter avec pismile » (alias PI-SPI, BCEAO) pour Auth.js : Next.js, SvelteKit, Express…",
+  "keywords": ["pismile", "auth.js", "next-auth", "oidc", "openid-connect", "pi-spi", "bceao", "uemoa"],
+  "homepage": "https://pismile.com/docs/sdk/authjs",
+  "license": "MIT",
+  "author": "pismile <support@pismile.com>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "peerDependencies": {
+    "@auth/core": ">=0.37.0"
+  },
+  "peerDependenciesMeta": {
+    "@auth/core": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@auth/core": "0.41.3",
+    "@types/node": "^20.17.0",
+    "typescript": "5.6.3",
+    "vitest": "2.1.9"
+  }
+}
